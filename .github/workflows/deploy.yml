@@ -9,7 +9,8 @@ jobs:
       uses: actions/checkout@v2
     - run: echo "Hello World!"
     - run: git status
-    - run: git remote add remote https://github.com/vireshp/vireshp.git
+    - run: git remote add origin https://github.com/vireshp/vireshp.git
+    - run: git remote -v
     - run: git pull
     - run: git status
     - run: echo "Hello again World!"
