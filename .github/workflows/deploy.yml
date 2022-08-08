@@ -9,9 +9,9 @@ jobs:
       uses: actions/checkout@v2
     - run: echo "Hello World!"
     - run: git status
-    - run: git remote add https://github.com/vireshp/vireshp.git
+    - run: git remote add upstream https://github.com/vireshp/vireshp.git
     - run: git remote -v
     - run: git pull
     - run: git status
     - run: echo "Hello again World!"
-    - run: git push remote main
+    - run: git push upstream main
